@@ -1,0 +1,167 @@
+{
+ "as_shipped": {
+  "E1": {
+   "lp_feasible": {
+    "alpha": 0.9,
+    "at_boundary": true,
+    "beta": 0.9,
+    "gamma": -0.2841480629194402,
+    "moment_norm": 0.326362631785439,
+    "n_lag_pairs": 122,
+    "rho": 0.057752182970116084
+   },
+   "ols": {
+    "alpha": 30.963656404184874,
+    "beta": 46.827170098089724,
+    "gamma": -0.07657730891157778
+   }
+  },
+  "E2_H4": {
+   "decision": "pooled model is the honest winner (H4 not supported)",
+   "rmse_pooled": 5.420558886471904,
+   "rmse_split": 5.438525910724997,
+   "separately_identified": true,
+   "split_wins": false,
+   "vif_logC": 2.4895038071465523,
+   "vif_logX": 2.472528100188485,
+   "vuong_z": 0.41248486407248114
+  },
+  "E3_returns": {
+   "ci95": [
+    53.021836568806286,
+    100.79720080909334
+   ],
+   "constant_returns_inside_ci": false,
+   "sum": 77.71424919336302
+  },
+  "compute_only": {
+   "elasticity_W": -0.09666006097761273,
+   "t_W": -1.297524621277653
+  },
+  "n_dropped": 0,
+  "n_repos_with_variation": 18,
+  "n_weeks": 123,
+  "partial_r2": {
+   "C": 0.02146751918315551,
+   "W": 0.014850463944841867,
+   "X": 0.1546373512558775
+  },
+  "proxy_corr_with_logW": 0.9923801970671122,
+  "stocks_controlled": {
+   "elasticity_W": -0.07657730891156005,
+   "t_cluster_repo": -0.7853899577191414,
+   "t_naive": -1.3393448527234013
+  }
+ },
+ "corrected": {
+  "E1": {
+   "lp_feasible": {
+    "alpha": 0.9,
+    "at_boundary": true,
+    "beta": 0.9,
+    "gamma": 0.27362442009054616,
+    "moment_norm": 0.009501852071529551,
+    "n_lag_pairs": 41,
+    "rho": 0.55548595703621
+   },
+   "ols": {
+    "alpha": -2.8815208450974485,
+    "beta": 7.741978813638425,
+    "gamma": 0.22423560864680425
+   }
+  },
+  "E2_H4": {
+   "decision": "pooled model is the honest winner (H4 not supported)",
+   "rmse_pooled": 0.772531778092615,
+   "rmse_split": 0.7459139133852993,
+   "separately_identified": true,
+   "split_wins": false,
+   "vif_logC": 1.3163263956162619,
+   "vif_logX": 1.344916532621959,
+   "vuong_z": 1.4042945578393244
+  },
+  "E2_H4_corrected": {
+   "cv_fe_additive": {
+    "n_evaluated": 41,
+    "n_skipped": 7,
+    "rmse": 1.1368136872572026
+   },
+   "cv_fe_pooled": {
+    "n_evaluated": 41,
+    "n_skipped": 7,
+    "rmse": 1.1168195673954164
+   },
+   "cv_fe_split": {
+    "n_evaluated": 41,
+    "n_skipped": 7,
+    "rmse": 1.104973054974145
+   },
+   "decision": "split model earns its place (H4 supported)",
+   "f_alpha_eq_beta": {
+    "F": 5.019519220768824,
+    "dof_den": 53,
+    "dof_num": 1,
+    "p": 0.029278647456840824,
+    "reject_5pct": true
+   },
+   "separately_identified": true,
+   "split_wins": true,
+   "vuong_z_vs_additive": 1.9646947448035788
+  },
+  "E3_returns": {
+   "ci95": [
+    0.21458303558251546,
+    9.894761184004626
+   ],
+   "constant_returns_inside_ci": true,
+   "sum": 5.08469357718778
+  },
+  "E3_returns_corrected": {
+   "ci95_wild_cluster": [
+    0.23690694321768765,
+    9.990343507710001
+   ],
+   "constant_returns_inside_ci": true,
+   "n_clusters": 18,
+   "sum": 5.08469357718778
+  },
+  "compute_only": {
+   "elasticity_W": 0.283622770191245,
+   "t_W": 4.103404099032704
+  },
+  "compute_only_corrected": {
+   "dof": 55,
+   "elasticity_W": 0.283622770191245,
+   "t_cluster_repo": 3.5643924215034146,
+   "t_dof_adjusted": 3.5864054389026405
+  },
+  "n_dropped": 49,
+  "n_repos_with_variation": 16,
+  "n_weeks": 74,
+  "partial_r2": {
+   "C": 0.012417878867614944,
+   "W": 0.15668346231352984,
+   "X": 0.2356593564600731
+  },
+  "proxy_corr_with_logW": 0.48893717670859155,
+  "stocks_controlled": {
+   "elasticity_W": 0.22423560864680303,
+   "t_cluster_repo": 3.038556018749079,
+   "t_naive": 3.6063285611520044
+  },
+  "stocks_controlled_corrected": {
+   "dof": 53,
+   "elasticity_W": 0.22423560864680303,
+   "p_two_sided": 0.0027772908858268042,
+   "t_dof_adjusted": 3.13800915418399
+  }
+ },
+ "missing_observation_cells": 49,
+ "n_obs": 123,
+ "n_repos": 18,
+ "source": "frozen anonymized panel (panels/panel_*.csv)",
+ "weeks_span": [
+  "2026-W15",
+  "2026-W30"
+ ]
+}

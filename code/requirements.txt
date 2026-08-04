@@ -1,0 +1,6 @@
+# Core (required for the model and tests)
+numpy>=2.0
+pytest>=9.0
+
+# Optional (only for figure export in experiments.py)
+# matplotlib>=3.7

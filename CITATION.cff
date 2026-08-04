@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "The AI Production Function: Code Capital, Context Capital, and Computational Labor"
+abstract: >-
+  A generalized production framework for AI-native economies: a conceptual
+  re-grounding and a falsifiable research program, not yet an empirically
+  validated theory. It re-grounds the classical factors as Code Capital,
+  Context Capital, and Computational Work, derives Y = A * C^alpha * X^beta *
+  W^gamma, proves it nests the Cobb-Douglas function, specifies how each factor
+  can be operationalized, confronts the simultaneity problem in identifying the
+  elasticities, weighs the labor interpretation of compute against
+  capital-service and intermediate-input alternatives, and states falsifiable
+  hypotheses.
+type: software
+version: 1.0.0
+date-released: 2026-08-04
+license: CC-BY-4.0
+keywords:
+  - production function
+  - artificial intelligence
+  - agentic economy
+  - intangible capital
+  - endogenous growth
+  - computational labor
+  - productivity measurement
+authors:
+  - family-names: "Lee"
+    given-names: "Sangseng"
+    orcid: "https://orcid.org/0009-0006-0544-2723"
+    affiliation: "Epic County, Seoul, Republic of Korea"
+    email: "hello@epiccounty.com"
+preferred-citation:
+  type: article
+  title: "The AI Production Function: Code Capital, Context Capital, and Computational Labor"
+  year: 2026
+  authors:
+    - family-names: "Lee"
+      given-names: "Sangseng"
+  # doi: "10.5281/zenodo.XXXXXXX"   # fill in after the Zenodo release

@@ -1,0 +1,73 @@
+# Paper 1 — The AI Production Function
+
+**Code Capital, Context Capital, and Computational Labor**
+
+A generalized production function for AI-native economies. Industrial economics models
+production as physical capital combined with human labor; this paper re-grounds the
+factors as **Code Capital (C)**, **Context Capital (X)**, and **computational labor** —
+the factor in the labor slot, measured by **computational work** $W$ — and derives
+$Y = A\,C^{\alpha}X^{\beta}W^{\gamma}$, which **nests** the classical Cobb-Douglas
+function. It specifies how each factor is measured, confronts the simultaneity problem in
+identifying the elasticities, and states falsifiable hypotheses.
+
+## Contents
+
+```
+paper.pdf · paper.md          the paper (submission copy + source); proofs are in Appendix B,
+                              Section 9 estimation diagnostics in Appendix C
+code/                         executable model, tests, and the identification demo
+code/repro/                   Section 9 regenerator: frozen anonymized panel + estimators
+references/bibliography.bib
+figures/figure1-factor-remapping.png
+```
+
+The formal proofs (Theorems A.1–A.4, B.1–B.3) are part of the paper itself, in
+**Appendix B**, and the Section 9 estimation diagnostics — the data-hygiene correction,
+the estimating-sample construction, and the item-by-item reading of Table 1 including the
+seed-convention sensitivity — in **Appendix C**. The bundle is self-contained.
+
+## Reproduce the verification
+
+```bash
+cd code
+pip install -r requirements.txt      # numpy, pytest
+python3 -m pytest -q                  # 41 tests: 27 (production, accumulation, estimation) + 14 (Section 9 repro, seed sweep, synthetic recovery)
+python3 experiments.py                # scenario tables
+python3 estimation.py                 # OLS bias under selection-on-the-shock; oracle isolates the confounding
+```
+
+Each theorem in Appendix B is cross-referenced to a test; the identification argument
+(Section 7.2) is demonstrated on synthetic ground-truth data (recovery under exogeneity,
+upward bias under simultaneity, and an infeasible oracle that isolates the confounding) —
+method validation, not empirical evidence.
+
+## Reproduce Section 9
+
+The Section 9 empirical illustration regenerates from a frozen, repository-anonymized
+panel (18 repositories → `repo01`…`repo18`) shipped in `code/repro/`:
+
+```bash
+cd code/repro
+pip install numpy pytest
+python3 reproduce_section9.py --check   # regenerates the corrected + as-shipped readings; matches the frozen result
+python3 sweep_seed_delta.py --check     # Appendix C(vi): seed/depreciation sweep matches results_sweep.json
+python3 -m pytest -q                     # 14 tests: Table 1 pins (both correction rounds), sweep pins, synthetic-panel estimator recovery
+```
+
+Only weekly aggregates travel with the bundle. The extraction layer that builds the panel
+from the organization's private session logs and version-control history is **not** shipped
+(the data are the authors' own and not independently auditable, as Section 9 discloses);
+what is reproducible is every Section 9 number, from the frozen panel forward.
+
+## Classification
+
+- **JEL:** D24, O33, O47, E22, L86
+- **Keywords:** production function; artificial intelligence; agentic economy;
+  intangible capital; endogenous growth; computational labor; productivity measurement
+
+## Citation & license
+
+Cite via the repository [`CITATION.cff`](CITATION.cff). Each tagged release is
+archived to Zenodo through the GitHub–Zenodo integration; the archival DOI is
+recorded in `CITATION.cff` once the release is published. Text CC BY 4.0, code
+MIT — see [`LICENSE`](LICENSE).
