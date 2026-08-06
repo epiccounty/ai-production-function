@@ -1,0 +1,34 @@
+{
+  "title": "The AI Production Function: Code Capital, Context Capital, and Computational Labor",
+  "description": "<p>A generalized production framework for AI-native economies: a conceptual re-grounding and a falsifiable research program, not yet an empirically validated theory. It re-grounds the classical factors as Code Capital (C), Context Capital (X), and Computational Work (W), derives Y = A * C^alpha * X^beta * W^gamma, proves it nests the Cobb-Douglas function, specifies how each factor can be operationalized, confronts the simultaneity problem in identifying the elasticities, weighs the labor interpretation of compute against capital-service and intermediate-input alternatives, and states falsifiable hypotheses.</p><p>Paper text is licensed CC-BY 4.0; accompanying code (verification, identification demo, Section 9 regenerator) is MIT.</p>",
+  "upload_type": "publication",
+  "publication_type": "article",
+  "language": "eng",
+  "version": "v1.0.0",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Lee, Sangseng",
+      "affiliation": "Epic County, Seoul, Republic of Korea",
+      "orcid": "0009-0006-0544-2723"
+    }
+  ],
+  "keywords": [
+    "production function",
+    "artificial intelligence",
+    "agentic economy",
+    "intangible capital",
+    "endogenous growth",
+    "computational labor",
+    "productivity measurement"
+  ],
+  "subjects": [
+    {"term": "D24", "identifier": "D24", "scheme": "jel"},
+    {"term": "O33", "identifier": "O33", "scheme": "jel"},
+    {"term": "O47", "identifier": "O47", "scheme": "jel"},
+    {"term": "E22", "identifier": "E22", "scheme": "jel"},
+    {"term": "L86", "identifier": "L86", "scheme": "jel"}
+  ],
+  "related_identifiers": []
+}

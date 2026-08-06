@@ -13,7 +13,7 @@ abstract: >-
   hypotheses.
 type: software
 version: 1.0.0
-date-released: 2026-08-04
+date-released: 2026-08-06
 license: CC-BY-4.0
 keywords:
   - production function
