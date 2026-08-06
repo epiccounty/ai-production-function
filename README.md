@@ -1,5 +1,7 @@
 # Paper 1 — The AI Production Function
 
+[![DOI](https://www.zenodo.org/badge/DOI/10.5281/zenodo.21824554.svg)](https://doi.org/10.5281/zenodo.21824554)
+
 **Code Capital, Context Capital, and Computational Labor**
 
 A generalized production function for AI-native economies. Industrial economics models
