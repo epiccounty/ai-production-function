@@ -15,6 +15,13 @@ type: software
 version: 1.0.0
 date-released: 2026-08-06
 license: CC-BY-4.0
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21824554"
+    description: "Zenodo archive of v1.0.0"
+  - type: url
+    value: "https://ssrn.com/abstract=7242925"
+    description: "SSRN preprint (posted 12 August 2026)"
 keywords:
   - production function
   - artificial intelligence
@@ -37,3 +44,5 @@ preferred-citation:
     - family-names: "Lee"
       given-names: "Sangseng"
   doi: "10.5281/zenodo.21824554"
+  url: "https://ssrn.com/abstract=7242925"
+  notes: "SSRN preprint, abstract 7242925 (posted 12 August 2026)"

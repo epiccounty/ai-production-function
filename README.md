@@ -12,6 +12,8 @@ $Y = A\,C^{\alpha}X^{\beta}W^{\gamma}$, which **nests** the classical Cobb-Dougl
 function. It specifies how each factor is measured, confronts the simultaneity problem in
 identifying the elasticities, and states falsifiable hypotheses.
 
+Preprint: **[SSRN abstract 7242925](https://ssrn.com/abstract=7242925)** (posted 12 August 2026).
+
 ## Contents
 
 ```
@@ -69,7 +71,12 @@ what is reproducible is every Section 9 number, from the frozen panel forward.
 
 ## Citation & license
 
-Cite via the repository [`CITATION.cff`](CITATION.cff). Each tagged release is
-archived to Zenodo through the GitHub–Zenodo integration; the archival DOI is
-recorded in `CITATION.cff` once the release is published. Text CC BY 4.0, code
-MIT — see [`LICENSE`](LICENSE).
+Cite via the repository [`CITATION.cff`](CITATION.cff), or cite the preprint:
+
+> Lee, Sangseng, *The AI Production Function: Code Capital, Context Capital, and
+> Computational Labor* (August 06, 2026). Available at SSRN:
+> https://ssrn.com/abstract=7242925
+
+Each tagged release is archived to Zenodo through the GitHub–Zenodo integration;
+v1.0.0 is archived at **[10.5281/zenodo.21824554](https://doi.org/10.5281/zenodo.21824554)**.
+Text CC BY 4.0, code MIT — see [`LICENSE`](LICENSE).
